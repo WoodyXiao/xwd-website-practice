@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- "http-equiv attribute" learn from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- for importing css style file -->
+    <link rel="stylesheet" href="src/css/style-for-ethics.css" />
+    <!-- for font of roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- "crossorigin enumerated attribute" learn form: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- for import font awesome -->
+
+    <!-- "integrity" learn from https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Code of ethics</title>
+  </head>
+  <body>
+    <!-- for the nav bar container -->
+    <header class="nav-box">
+      <div class="return-btn">
+        <a href="index.html"
+          ><i class="fas fa-arrow-left"
+            ><span class="link-text">Home</span></i
+          ></a
+        >
+      </div>
+
+      <!-- "onclick" learn form: https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
+      <div class="logo" onclick="window.location.href='index.html'">
+        <h1>SFUPet</h1>
+      </div>
+      <nav class="nav-items">
+        <ul>
+          <li><a href="index.html" class="navItem">About</a></li>
+          <li>
+            <a
+              onclick="window.location.href='index.html#therapistID?a=1'"
+              class="navItem"
+              >Therapists</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="window.location.href='index.html#ethicsID?a=2'"
+              class="navItem"
+              >Code</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="window.location.href='index.html#acknowledgementsID?a=3'"
+              class="navItem"
+              >Acknowledgement</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="home-btn">
+        <a href="index.html"
+          ><i class="fas fa-home"><span class="link-text">Home</span></i></a
+        >
+      </div>
+    </header>
+    <!-- end for the nav bar container -->
+
+    <!-- for the main-content -->
+    <div class="main-content-container" id="main-content-ID">
+      <!-- for the return button -->
+      <div class="return-btn">
+        <a href="index.html"
+          ><i class="fas fa-arrow-left">
+            <span class="link-text">Home</span>
+          </i></a
+        >
+      </div>
+      <!-- end for the return button -->
+
+      <!-- for the title part -->
+      <div class="title-and-subtitle">
+        <svg
+          width="44"
+          height="38"
+          viewBox="0 0 44 38"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <a href="ethic.html" aria-label="go back to the ethic page">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M14.25 29.25L21 22.635C20.1225 22.545 19.47 22.5 18.75 22.5C12.7425 22.5 0.75 25.515 0.75 31.5V36H21L14.25 29.25ZM18.75 18C23.7225 18 27.75 13.9725 27.75 9C27.75 4.0275 23.7225 0 18.75 0C13.7775 0 9.75 4.0275 9.75 9C9.75 13.9725 13.7775 18 18.75 18Z"
+              fill="white"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M28.8075 37.125L21 29.25L24.15 26.0775L28.8075 30.7575L40.35 19.125L43.5 22.2975L28.8075 37.125Z"
+              fill="white"
+            />
+          </a>
+        </svg>
+
+        <h1 class="title">Code of Ethics</h1>
+      </div>
+      <!-- end for the title part -->
+
+      <!-- for the ethics content -->
+      <div class="description">
+        <p>
+          Therapists and volunteers of SFU PET will not accept remuneration for
+          their visits. Volunteers may provide information about SFU PET to
+          individuals, families or groups interested in making a donation to the
+          Society. Only companion animals that are active in animal-assisted
+          therapy or activities are to be represented as a ‘therapy animals.’
+          Ratified pet therapy animals who have not served as therapy animals
+          for one year are considered to be retired therapy animals.
+          Discrimination or harassment (unwelcome behavior of a sexual or
+          personal nature), whether against an individual or a group on the
+          basis of race, religious beliefs, colour, gender, physical or mental
+          disability, material status, age, sexual orientation, ancestry, place
+          of origin or in the case of an animal, the breed of said animal, is
+          neither appropriate nor acceptable and could result in expulsion from
+          SFU PET.
+        </p>
+      </div>
+      <!-- end for the ethics content -->
+    </div>
+    <!-- end for the main-content -->
+
+    <!-- for contact us -->
+    <div class="contact-us">
+      <div class="footer-social-media-icon">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+
+      <div class="footer-container">
+        <div class="contact-container">
+          <p>Contact Us</p>
+          <ul>
+            <li>SFU PET</li>
+            <li>1 778 782 1234</li>
+            <li>8888 University Drive</li>
+            <li>Burnaby, B.C.</li>
+            <li>Canada V5A 1S6</li>
+            <li>View on map</li>
+          </ul>
+        </div>
+        <div class="follow-us-container">
+          <p>Follow Us</p>
+          <ul>
+            <li>@SFU_PET (Twitter)</li>
+            <li>@SFU_PET (Facebook)</li>
+            <li>@SFU_PET (Instagram)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p>&copy;Copyright 2021 SFUPet</p>
+      </div>
+    </div>
+    <!-- end for contact us -->
+  </body>
+</html>

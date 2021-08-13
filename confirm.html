@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- "http-equiv attribute" learn from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- for importing css style file -->
+    <link rel="stylesheet" href="src/css/style-for-confirmed.css" />
+    <!-- for font of roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- "crossorigin enumerated attribute" learn form: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- for import font awesome -->
+    <!-- "integrity" learn from https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <title>Booking Confirmed</title>
+  </head>
+  <body>
+    <!-- for the nav bar container -->
+    <header class="nav-box">
+      <div class="return-btn">
+        <a href="therapist.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
+
+      <!-- "onclick" learn form: https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
+      <div class="logo" onclick="window.location.href='index.html'">
+        <h1>SFUPet</h1>
+      </div>
+      <nav class="nav-items">
+        <ul>
+          <li><a href="index.html" class="navItem">About</a></li>
+          <li>
+            <a
+              onclick="window.location.href='index.html#therapistID?a=1'"
+              class="navItem"
+              >Therapists</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="window.location.href='index.html#ethicsID?a=2'"
+              class="navItem"
+              >Code</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="window.location.href='index.html#acknowledgementsID?a=3'"
+              class="navItem"
+              >Acknowledgement</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="home-btn">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+      </div>
+    </header>
+    <!-- end for the nav bar container -->
+
+    <!-- for main content part -->
+    <div class="main-content-container" id="main-content-id">
+      <!-- for the return button -->
+      <div class="return-btn">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
+      </div>
+      <!-- end for the return button -->
+
+      <!-- for the title and subtitle part -->
+      <div class="title-and-subtitle">
+        <h1 class="title">Booking Confirmation</h1>
+        <p class="subtitle">(Hop, hop, hop…)</p>
+      </div>
+      <!-- end for the title and subtitle part -->
+
+      <!-- for the image part -->
+      <div class="image-container"></div>
+      <!-- end for the image part -->
+
+      <!-- for the description  -->
+      <div class="description">
+        <p>
+          Xena is ready to go, and will see you soon. We will follow up via
+          email to confirm any other details.
+        </p>
+      </div>
+      <!-- end for the description -->
+    </div>
+    <!-- end for main content part -->
+
+    <!-- for contact us -->
+    <div class="contact-us">
+      <div class="footer-social-media-icon">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+
+      <div class="footer-container">
+        <div class="contact-container">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>SFU PET</li>
+            <li>1 778 782 1234</li>
+            <li>8888 University Drive</li>
+            <li>Burnaby, B.C.</li>
+            <li>Canada V5A 1S6</li>
+            <li>View on map</li>
+          </ul>
+        </div>
+        <div class="follow-us-container">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>@SFU_PET (Twitter)</li>
+            <li>@SFU_PET (Facebook)</li>
+            <li>@SFU_PET (Instagram)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p>&copy;Copyright 2021 SFUPet</p>
+      </div>
+    </div>
+    <!-- end for contact us -->
+  </body>
+</html>

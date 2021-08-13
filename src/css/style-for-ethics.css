@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* for nav part */
+.nav-box {
+  /* background-color: blue; */
+
+  /* "display: flex;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout*/
+  display: flex;
+
+  /* "justify-content: flex-end;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+  justify-content: flex-end;
+
+  /* "align-items: center;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items */
+  align-items: center;
+
+  /* "padding: 20px 5%;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/padding */
+  padding: 20px 5%;
+
+  background-color: white;
+}
+
+.nav-box .return-btn {
+  display: none;
+}
+
+.logo {
+  /* background-color: aquamarine; */
+  display: flex;
+
+  /* "cursor: pointer;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
+  cursor: pointer;
+
+  margin-right: auto;
+
+  /* "transition: all 0.5s ease 0s;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+  transition: all 0.5s ease 0s;
+
+  /* "justify-content: space-evenly;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+  justify-content: space-evenly;
+
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+.logo h1 {
+  /* "font-weight: bold;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+  font-weight: bold;
+  transition: all 0.3s ease 0s;
+}
+
+.logo .bar {
+  position: relative;
+  background-color: black;
+  width: 2px;
+  height: 40px;
+  left: 5px;
+  transition: all 0.3s ease 0s;
+}
+
+.logo h3 {
+  position: relative;
+  left: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-box .nav-items ul {
+  /* "list-style-type: none;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type */
+  list-style-type: none;
+
+  transition: all 0.3s ease 0s;
+}
+
+.nav-box .nav-items ul li {
+  /* "display: inline-block;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+  display: inline-block;
+
+  padding: 0 1rem;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-box .nav-items ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+
+  /* "font-weight: 500;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+  font-weight: 500;
+
+  font-size: 1.25rem;
+  padding: 5px 15px;
+
+  /* "border-radius: 10px;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
+  border-radius: 10px;
+
+  transition: all 0.5s ease 0s;
+}
+
+.nav-box .nav-items ul li a:hover {
+  color: white;
+  background-color: #5050ff;
+
+  /* "transform: scale(1.1);" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale() */
+  transform: scale(1.1);
+
+  cursor: pointer;
+}
+
+.nav-box .nav-items ul li a:active {
+  color: white;
+  background-color: #5050ff;
+  transition: all 0.3s ease 0s;
+}
+
+.home-btn {
+  display: none;
+  transition: all 0.3s ease 0s;
+}
+/* end for nav bar */
+
+/* for the main content part */
+.main-content-container {
+  background-color: #4d4d4d;
+  padding-top: 3%;
+  width: 100%;
+  height: 75vh;
+  transition: all 0.5s ease 0s;
+}
+
+#main-content-ID {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/about2.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content-container .return-btn {
+  /* "padding-left: 5%;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left */
+  padding-left: 5%;
+  transition: all 0.5s ease 0s;
+}
+
+.main-content-container .return-btn i {
+  position: relative;
+
+  font-size: 1.875rem;
+  color: white;
+  transition: all 0.5s ease 0s;
+}
+
+.main-content-container .title-and-subtitle {
+  display: flex;
+  padding-bottom: 3%;
+  padding-left: 14%;
+  color: white;
+}
+
+.main-content-container .title-and-subtitle .title {
+  /* margin: 0 auto; */
+  position: relative;
+  padding-left: 0.65rem;
+  text-align: left;
+  font-size: 2.5rem;
+  transition: all 0.3s ease 0s;
+}
+
+.main-content-container .description {
+  padding-left: 14%;
+  padding-top: 0%;
+  padding-bottom: 7%;
+  width: 60%;
+  color: white;
+}
+
+.main-content-container .description p {
+  font-size: 1.125rem;
+}
+
+/* for contact us */
+.contact-us {
+  background-color: #131313;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+.contact-us .footer-social-media-icon {
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-left: 5%;
+}
+
+.contact-us .footer-social-media-icon i {
+  /* font-size: 22px; */
+  font-size: 1.375rem;
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.contact-us .footer-container {
+  padding-left: 5%;
+}
+
+.contact-us .footer-container .contact-container {
+  padding-right: 6%;
+}
+
+.contact-us .footer-container {
+  display: flex;
+}
+
+.contact-us .footer-container ul li {
+  list-style: none;
+}
+
+.contact-us .copyright-container {
+  padding-top: 1.625rem;
+  padding-left: 5%;
+  /* font-size: 12px;
+  padding-bottom: 10px; */
+  font-size: 0.75rem;
+  padding-bottom: 1.625rem;
+}
+
+.contact-us .contact-container p,
+.contact-us .follow-us-container p {
+  /* padding-bottom: 25px; */
+  padding-bottom: 1.563rem;
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
+.contact-us .contact-container ul,
+.contact-us .follow-us-container ul {
+  /* font-size: 12px; */
+  font-size: 0.75rem;
+}
+/* end for contact us */
+
+.link-text {
+  display: none;
+}
+
+/* for the mobile size */
+/* for the break-points */
+@media (max-width: 62.5rem) {
+  .nav-items {
+    display: none;
+  }
+  .nav-box .return-btn {
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  .nav-box .return-btn i {
+    display: relative;
+    font-size: 30px;
+    color: black;
+    transition: all 0.5s ease 0s;
+  }
+  .logo {
+    margin: 0 auto;
+    transition: all 0.5s ease 0s;
+  }
+
+  .logo .bar,
+  .logo h3 {
+    display: none;
+  }
+  .home-btn {
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  .home-btn i {
+    display: relative;
+    font-size: 30px;
+    color: black;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content-container .return-btn {
+    display: none;
+    transition: all 0.5s ease 0s;
+  }
+  .main-content-container .title-and-subtitle {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 2rem;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+  }
+  .main-content-container .title-and-subtitle .title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+    transition: all 0.3s ease 0s;
+  }
+  .main-content-container .description {
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 5%;
+    text-align: left;
+    width: 90%;
+  }
+  .contact-us .copyright-container {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 37.5rem) {
+  .main-content-container .title-and-subtitle .title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .main-content-container .title-and-subtitle svg {
+    width: 2.575rem;
+    height: 2.575rem;
+  }
+
+  .main-content-container .description {
+    margin: 0 auto;
+    text-align: left;
+
+    transition: all 0.3s ease 0s;
+  }
+
+  .main-content-container .description p {
+    font-size: 0.75rem;
+  }
+}
+@media (max-height: 800px) {
+  .main-content-container {
+    background-color: #4d4d4d;
+    padding-top: 3%;
+    width: 100%;
+    /* height: 600px; */
+    height: auto;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content-container .description {
+    text-align: left;
+    font-size: 12px;
+    transition: all 0.3s ease 0s;
+    padding-bottom: 5rem;
+  }
+
+  /* for contact us */
+  .contact-us {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease 0s;
+  }
+  /* end for contact us */
+}
+@media (max-height: 600px) and (max-width: 600px) {
+  .main-content-container {
+    background-color: #4d4d4d;
+    padding-top: 3%;
+    width: 100%;
+    /* height: 400px; */
+    height: auto;
+    transition: all 0.5s ease 0s;
+  }
+  /* for contact us */
+  /* .contact-us {
+    background-color: aquamarine;
+    width: 100%;
+    height: 300px;
+    transition: all 0.5s ease 0s;
+  } */
+  /* end for contact us */
+}
+@media (max-height: 800px) {
+  /* for contact us */
+  .contact-us {
+    width: 100%;
+    height: auto;
+  }
+  /* end for contact us */
+}
+@media (max-height: 600px) and (max-width: 1000px) {
+  .contact-us .copyright-container {
+    padding-top: 15px;
+  }
+}

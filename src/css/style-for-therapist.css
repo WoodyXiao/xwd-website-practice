@@ -1,0 +1,774 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* for nav part */
+.nav-box {
+  /* background-color: blue; */
+
+  /* "display: flex;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout*/
+  display: flex;
+
+  /* "justify-content: flex-end;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+  justify-content: flex-end;
+
+  /* "align-items: center;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/align-items */
+  align-items: center;
+
+  /* "padding: 20px 5%;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/padding */
+  padding: 20px 5%;
+
+  /* background-color: #c4c4c4; */
+  background-color: #fff;
+  /* "position: sticky;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+  position: sticky;
+
+  z-index: 999;
+  top: 0;
+}
+
+.nav-box .return-btn {
+  display: none;
+}
+
+.logo {
+  /* background-color: aquamarine; */
+  display: flex;
+
+  /* "cursor: pointer;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
+  cursor: pointer;
+
+  margin-right: auto;
+
+  /* "transition: all 0.5s ease 0s;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/transition */
+  transition: all 0.5s ease 0s;
+
+  /* "justify-content: space-evenly;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+  justify-content: space-evenly;
+
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+.logo span {
+  /* "font-weight: bold;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+  position: relative;
+  font-weight: bold;
+  font-size: 2rem;
+  transition: all 0.3s ease 0s;
+}
+
+.logo .bar {
+  position: relative;
+  background-color: black;
+  /* width: 2px;
+  height: 40px;
+  left: 5px; */
+  width: 0.125rem;
+  height: 2.5rem;
+  left: 0.313rem;
+  transition: all 0.3s ease 0s;
+}
+
+.logo h3 {
+  position: relative;
+  left: 10px;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-box .nav-items ul {
+  /* "list-style-type: none;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type */
+  list-style-type: none;
+
+  transition: all 0.3s ease 0s;
+}
+
+.nav-box .nav-items ul li {
+  /* "display: inline-block;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+  display: inline-block;
+
+  padding: 0 1rem;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-box .nav-items ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+
+  /* "font-weight: 500;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+  font-weight: 500;
+
+  font-size: 1.25rem;
+  padding: 5px 15px;
+
+  /* "border-radius: 10px;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius */
+  border-radius: 10px;
+
+  transition: all 0.5s ease 0s;
+}
+
+.nav-box .nav-items ul li a:hover {
+  color: white;
+  background-color: #5050ff;
+
+  /* "transform: scale(1.1);" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale() */
+  transform: scale(1.1);
+
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-box .nav-items ul li a:active {
+  color: white;
+  background-color: #5050ff;
+  transition: all 0.3s ease 0s;
+}
+
+/* .nav-box .nav-items ul li .selected {
+  color: white;
+  background-color: #4d4d4d;
+} */
+
+.home-btn {
+  display: none;
+}
+/* end for nav bar */
+
+/* for the main content */
+
+.main-content {
+  background-color: #4d4d4d;
+
+  /* "padding-top: 3%;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top */
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 100%;
+  height: auto;
+  position: relative;
+  transition: all 0.3s ease 0s;
+
+  overflow: hidden;
+}
+
+#background {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/4.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content .return-btn {
+  /* "padding-left: 5%;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left */
+  padding-left: 5%;
+  transition: all 0.3s ease 0s;
+}
+
+.main-content .return-btn i {
+  /* font-size: 30px; */
+  font-size: 1.875rem;
+  color: black;
+  transition: all 0.5s ease 0s;
+
+  color: #fff;
+}
+
+.main-content .therapist-title {
+  /* "padding-bottom: 3%;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom */
+  padding-bottom: 3%;
+}
+
+.main-content .therapist-title h1 {
+  margin: 0 auto;
+  /* "text-align: center;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align */
+  text-align: center;
+  /* font-size: 40px; */
+  font-size: 2.5rem;
+
+  color: #fff;
+}
+
+.main-content .pet-card-box {
+  display: flex;
+  width: 400%;
+  transition: all 0.3s ease 0s;
+  padding-bottom: 3.5rem;
+}
+
+.main-content .pet-card-box .pet-card {
+  /* margin: 2% auto; */
+  background-color: rgba(36, 36, 36, 0.99);
+  border-radius: 10px;
+  /* width: 60%; */
+  width: 100%;
+  /* height: 400px; */
+  height: auto;
+  margin: 0 5%;
+  /* box-sizing: border-box; */
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.main-content .pet-card-box .pet-card .pet-name-and-btn {
+  display: flex;
+
+  /* "justify-content: space-between" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+  /* justify-content: space-around; */
+
+  padding: 1.25rem 5%;
+  align-items: center;
+  transition: all 0.3s ease 0s;
+}
+
+.main-content .pet-card-box .pet-card .pet-name-and-btn .pet-name {
+  /* font-size: 26px; */
+  font-size: 1.625rem;
+}
+
+.main-content .pet-card-box .pet-card .btn-container {
+  padding: 1.25rem 5%;
+}
+
+.main-content .pet-card-box .pet-card .btn-container .book-btn {
+  text-decoration: none;
+  /* font-size: 20px; */
+  font-size: 1.25rem;
+
+  color: white;
+  background-color: #5050ff;
+
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+
+  /* "border: none;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/border */
+  border: none;
+
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.main-content .pet-card-box .pet-card .btn-container .book-btn:hover {
+  transform: scale(1.1);
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* "justify-content: space-around;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+  /* justify-content: space-around; */
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description .pet-photo {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #4d4d4d;
+  transition: all 0.5s ease 0s;
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description #Xena1 {
+  display: none;
+  /* https://images.unsplash.com/photo-1557246565-8a3d3ab5d7f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80 */
+  background: url("../images/p1.jfif") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description #Xena {
+  background: url("../images/p1.jfif") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description #Dandylion1 {
+  display: none;
+  background: url("../images/p2.jfif") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description #Dandylion {
+  background: url("../images/p2.jfif") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description #Thumper1 {
+  display: none;
+  background: url("../images/p3.jfif") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description #Thumper {
+  background: url("../images/p3.jfif") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description #Cali1 {
+  display: none;
+  background: url("../images/p4.jfif") no-repeat center center;
+  background-size: cover;
+}
+
+.main-content .pet-card-box .pet-card .pet-photo-and-description #Cali {
+  background: url("../images/p4.jfif") no-repeat center center;
+  background-size: cover;
+}
+
+/* solution for making the text vertical align middle is from this link below */
+/* link:https://stackoverflow.com/questions/7967217/vertical-align-middle-doesnt-work */
+.main-content .pet-card-box .pet-card .pet-photo-and-description .description {
+  display: table;
+  width: 550px;
+  height: 160px;
+  transition: all 0.5s ease 0s;
+}
+
+.main-content
+  .pet-card-box
+  .pet-card
+  .pet-photo-and-description
+  .description
+  p {
+  vertical-align: middle;
+
+  /* "diaplay:table-cell" https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+  display: table-cell;
+}
+
+/* end for the main content */
+
+/* for button  */
+.btn-container,
+.btn-container-2 {
+  top: 50%;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-container-2 .left-btn a {
+  text-decoration: none;
+  color: #fff;
+  /* margin-left: 10px; */
+  margin-left: 0.625rem;
+
+  /* "position: absolute;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+  position: absolute;
+
+  left: 0;
+  top: 45%;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+  padding-left: 5%;
+}
+.btn-container-2 .right-btn a {
+  text-decoration: none;
+  color: #fff;
+  /* margin-right: 10px; */
+  margin-right: 0.625rem;
+  position: absolute;
+  right: 0;
+  top: 45%;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+
+  padding-right: 5%;
+}
+.btn-container-2 .left-btn i {
+  /* font-size: 30px; */
+  font-size: 1.875rem;
+}
+.btn-container-2 .right-btn i {
+  /* font-size: 30px; */
+  font-size: 1.875rem;
+}
+.btn-container-2 .left-btn i:hover {
+  color: white;
+  transform: scale(1.3);
+  transition: all 0.3s ease 0s;
+}
+.btn-container-2 .right-btn i:hover {
+  color: white;
+  transform: scale(1.3);
+  transition: all 0.3s ease 0s;
+}
+/* end for button */
+
+/* for indicator */
+.indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 22.5%;
+  transition: all 0.3s ease 0s;
+}
+.indicator .btn {
+  display: inline-block;
+  /* height: 10px;
+  width: 10px;
+  margin: 1px;
+  border-radius: 15px; */
+  height: 0.625rem;
+  width: 0.625rem;
+  margin: 0.063rem;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.5s;
+  transition: all 0.3s ease 0s;
+}
+
+.indicator .active {
+  background-color: #5050ff;
+  /* width: 25px; */
+  width: 1.563rem;
+}
+/* end for indicator */
+
+/* for contact us */
+.contact-us {
+  background-color: #131313;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease 0s;
+  color: #fff;
+}
+
+.contact-us .footer-social-media-icon {
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+  padding-left: 5%;
+}
+
+.contact-us .footer-social-media-icon i {
+  /* font-size: 22px; */
+  font-size: 1.375rem;
+  padding-right: 2%;
+  cursor: pointer;
+}
+
+.contact-us .footer-container {
+  padding-left: 5%;
+}
+
+.contact-us .footer-container .contact-container {
+  padding-right: 6%;
+}
+
+.contact-us .footer-container {
+  display: flex;
+}
+
+.contact-us .footer-container ul li {
+  list-style: none;
+}
+
+.contact-us .copyright-container {
+  padding-top: 1.625rem;
+  padding-left: 5%;
+  /* font-size: 12px;
+  padding-bottom: 10px; */
+  font-size: 0.75rem;
+  padding-bottom: 1.625rem;
+}
+
+.contact-us .contact-container h3,
+.contact-us .follow-us-container h3 {
+  /* padding-bottom: 25px; */
+  padding-bottom: 1.563rem;
+}
+
+.contact-us .contact-container ul,
+.contact-us .follow-us-container ul {
+  /* font-size: 12px; */
+  font-size: 0.75rem;
+}
+/* end for contact us */
+
+.link-text {
+  display: none;
+}
+
+/* for mobile size */
+@media (max-width: 62.5rem) {
+  .nav-items {
+    display: none;
+  }
+  .nav-box .return-btn {
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  .nav-box .return-btn i {
+    display: relative;
+    /* font-size: 30px; */
+    font-size: 1.875rem;
+    color: black;
+    transition: all 0.5s ease 0s;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+
+  .logo .bar,
+  .logo h3 {
+    display: none;
+  }
+  .home-btn {
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  .home-btn i {
+    display: relative;
+    /* font-size: 30px; */
+    font-size: 1.875rem;
+    color: black;
+    transition: all 0.5s ease 0s;
+  }
+
+  #slide {
+    transform: translate(0) !important;
+  }
+
+  .main-content .therapist-title h1 {
+    margin: 0 auto;
+    text-align: center;
+    /* font-size: 30px; */
+    font-size: 1.875rem;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content .return-btn {
+    display: none;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content .pet-card-box {
+    display: block;
+    width: 100%;
+  }
+
+  .main-content .pet-card-box .pet-card {
+    margin: 2% auto;
+    width: 60%;
+    height: auto;
+  }
+
+  .main-content .pet-card-box .pet-card .pet-photo-and-description {
+    display: block;
+    margin: 0 auto;
+
+    /* "place-items: center;" learn from: https://developer.mozilla.org/en-US/docs/Web/CSS/place-items */
+    place-items: center;
+
+    text-align: center;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content .pet-card-box .pet-card .pet-photo-and-description .pet-photo {
+    display: none;
+  }
+
+  .main-content .pet-card-box .pet-card .pet-photo-and-description #Xena1,
+  .main-content .pet-card-box .pet-card .pet-photo-and-description #Dandylion1,
+  .main-content .pet-card-box .pet-card .pet-photo-and-description #Thumper1,
+  .main-content .pet-card-box .pet-card .pet-photo-and-description #Cali1 {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #4d4d4d;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content
+    .pet-card-box
+    .pet-card
+    .pet-photo-and-description
+    .description {
+    display: inline-block;
+    width: 95%;
+    height: auto;
+    /* font-size: 14px; */
+    font-size: 0.875rem;
+    text-align: left;
+    padding-top: 5%;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content .pet-card-box .pet-card .pet-name-and-btn {
+    display: block;
+    place-items: center;
+    text-align: center;
+    margin: 0 auto;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content .pet-card-box .pet-card .btn-container {
+    text-align: center;
+    place-items: center;
+  }
+
+  .btn-container-2 {
+    display: none;
+  }
+
+  .indicator {
+    display: none;
+  }
+
+  .contact-us .copyright-container {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .main-content .therapist-title h1 {
+    margin: 0 auto;
+    text-align: center;
+    /* font-size: 24px; */
+    font-size: 1.5rem;
+  }
+
+  .main-content .pet-card-box .pet-card {
+    width: 85%;
+  }
+
+  .main-content .pet-card-box .pet-card .pet-photo-and-description .pet-photo {
+    /* display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #4d4d4d;
+    transition: all 0.5s ease 0s; */
+    display: none;
+  }
+
+  .main-content
+    .pet-card-box
+    .pet-card
+    .pet-photo-and-description
+    .description {
+    display: block;
+    width: 95%;
+    height: auto;
+    /* font-size: 12px; */
+    font-size: 0.8rem;
+    text-align: left;
+    padding-top: 10%;
+    transition: all 0.5s ease 0s;
+  }
+
+  /* .main-content .pet-card .pet-name-and-btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 4%;
+    align-items: center;
+    transition: all 0.5s ease 0s;
+  } */
+
+  .main-content .pet-card-box .pet-card .pet-name-and-btn .pet-name {
+    /* font-size: 20px; */
+    font-size: 1.25rem;
+    transition: all 0.5s ease 0s;
+  }
+
+  .main-content
+    .pet-card-box
+    .pet-card
+    .pet-name-and-btn
+    .btn-container
+    .book-btn {
+    text-decoration: none;
+    /* font-size: 18px; */
+    font-size: 1.125rem;
+
+    color: white;
+    background-color: #5050ff;
+
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+  }
+}
+@media (max-height: 800px) {
+  .btn-container {
+    /* top: 400px; */
+    top: 20rem;
+    transition: all 0.5s ease 0s;
+  }
+
+  .btn-container-2 .left-btn a {
+    /* top: 350px; */
+    top: 24.875rem;
+    transition: all 0.5s ease 0s;
+  }
+  .btn-container-2 .right-btn a {
+    /* top: 350px; */
+    top: 24.875rem;
+    transition: all 0.5s ease 0s;
+  }
+
+  .indicator {
+    /* top: 700px; */
+    top: 39.75rem;
+    transition: all 0.5s ease 0s;
+  }
+  .indicator .btn {
+    display: inline-block;
+    /* height: 10px;
+    width: 10px;
+    margin: 1px;
+    border-radius: 15px; */
+    height: 0.625rem;
+    width: 0.625rem;
+    margin: 0.063rem;
+    border-radius: 0.938rem;
+    background-color: white;
+    cursor: pointer;
+
+    transition: all 0.5s ease 0s;
+  }
+  .indicator .active {
+    background-color: #5050ff;
+    /* width: 25px; */
+    width: 1.563rem;
+  }
+
+  /* for contact us */
+  .contact-us {
+    width: 100%;
+    height: auto;
+  }
+  /* end for contact us */
+}
+@media (max-height: 600px) and (max-width: 1000px) {
+  .contact-us .copyright-container {
+    padding-top: 15px;
+  }
+}
+@media (max-width: 300px) {
+  .main-content .pet-card-box .pet-card {
+    height: auto;
+  }
+  .main-content .pet-card-box .pet-card .pet-photo-and-description #Xena1,
+  .main-content .pet-card-box .pet-card .pet-photo-and-description #Dandylion1,
+  .main-content .pet-card-box .pet-card .pet-photo-and-description #Thumper1,
+  .main-content .pet-card-box .pet-card .pet-photo-and-description #Cali1 {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #4d4d4d;
+    transition: all 0.5s ease 0s;
+  }
+}

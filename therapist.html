@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- "http-equiv attribute" learn from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- for importing css style file -->
+    <link rel="stylesheet" href="src/css/style-for-therapist.css" />
+    <!-- for font of roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- "crossorigin enumerated attribute" learn form: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- for import font awesome -->
+
+    <!-- "integrity" learn from https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>SFU Pet Therapist</title>
+  </head>
+  <body>
+    <!-- for the nav bar container -->
+    <header class="nav-box">
+      <div class="return-btn">
+        <a href="index.html"
+          ><i class="fas fa-arrow-left"
+            ><span class="link-text">Home</span></i
+          ></a
+        >
+      </div>
+      <!-- "onclick" learn form: https://stackoverflow.com/questions/2906582/how-to-create-an-html-button-that-acts-like-a-link -->
+      <div class="logo" onclick="window.location.href='index.html'">
+        <span>SFUPet</span>
+      </div>
+      <nav class="nav-items">
+        <ul>
+          <li><a href="index.html" class="navItem">About</a></li>
+          <li>
+            <a href="index.html#therapistID?a=1" class="navItem">Therapists</a>
+          </li>
+          <li>
+            <a href="index.html#ethicsID?a=2" class="navItem">Code</a>
+          </li>
+          <li>
+            <a href="index.html#acknowledgementsID?a=3" class="navItem"
+              >Acknowledgement</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="home-btn">
+        <a href="index.html"
+          ><i class="fas fa-home"><span class="link-text">Home</span></i></a
+        >
+      </div>
+    </header>
+    <!-- end for the nav bar container -->
+
+    <!-- for the main content -->
+    <section class="main-content" id="background">
+      <!-- for the return button -->
+      <div class="return-btn">
+        <a href="index.html"
+          ><i class="fas fa-arrow-left"
+            ><span class="link-text">Home</span></i
+          ></a
+        >
+      </div>
+      <!-- end for the return button -->
+
+      <!-- for the title of therapist part -->
+      <div class="therapist-title">
+        <h1>Therapists Available</h1>
+      </div>
+      <!-- end for the title of therapist part -->
+
+      <div class="pet-card-box" id="slide">
+        <!-- for the pet card -->
+        <section class="pet-card">
+          <div class="pet-name-and-btn">
+            <h2 class="pet-name">Xena</h2>
+          </div>
+          <div class="pet-photo-and-description">
+            <span class="pet-photo" id="Xena1"></span>
+            <div class="description">
+              <p>
+                She isn’t a warrior princess, but she is quite the lover. Say
+                hello to Xena! This big girl is rather bouncy when she first
+                meets you. She is just excited to make a new friend and maybe
+                get a yummy treat from you. She is a pretty good walker,
+                although she can pull some. This girl just has places to go and
+                people to see after all. Xena does well on stairs and she loves
+                to check out all the new smells we have here in the city. She
+                also has her fun side where she runs around just acting silly.
+                She is a beauty and she is hard to pass up. If you are
+                interested in meeting Xena, please book a session.
+              </p>
+            </div>
+            <!-- "<span> HTML element" learn from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span -->
+            <span class="pet-photo" id="Xena"></span>
+          </div>
+
+          <div class="btn-container">
+            <button
+              onclick="window.location.href='booking.html'"
+              class="book-btn"
+            >
+              Book
+            </button>
+          </div>
+        </section>
+
+        <section class="pet-card">
+          <div class="pet-name-and-btn">
+            <h2 class="pet-name">Dandylion</h2>
+          </div>
+          <div class="pet-photo-and-description">
+            <span class="pet-photo" id="Dandylion1"></span>
+            <div class="description">
+              <p>
+                Vocal and confident, Dandylion is a bright girl that is looking
+                for love. A connoisseur of head butts, she wants to be where you
+                are and will stick to you like glue. She is not afraid to ask
+                for attention and is often found perched in a cat tree sleeping.
+                Never fear, Dandylion is instantly awake and active once a human
+                is around. Looking for a snuggly companion that wants to be in
+                your lap all day? Dandylion is just a session-booking away.
+              </p>
+            </div>
+
+            <span class="pet-photo" id="Dandylion"></span>
+          </div>
+          <div class="btn-container">
+            <!-- "The <button> HTML element" learn from: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
+            <button class="book-btn">Book</button>
+          </div>
+        </section>
+
+        <section class="pet-card">
+          <div class="pet-name-and-btn">
+            <h2 class="pet-name">Thumper</h2>
+          </div>
+          <div class="pet-photo-and-description">
+            <span class="pet-photo" id="Thumper1"></span>
+            <div class="description">
+              <p>
+                This great chinchilla loves being scratched behind his ears and
+                napping on a lap. Is very sweet and even though he has only one
+                front paw, it does not slow him down. He loves to eat, play, and
+                take dust baths all day. If you’re looking for an extra cute
+                dust-bunny, Thumper is available for therapy sessions now.
+              </p>
+            </div>
+
+            <span class="pet-photo" id="Thumper"></span>
+          </div>
+          <div class="btn-container">
+            <button class="book-btn">Book</button>
+          </div>
+        </section>
+
+        <section class="pet-card">
+          <div class="pet-name-and-btn">
+            <h2 class="pet-name">Cali</h2>
+          </div>
+          <div class="pet-photo-and-description">
+            <span class="pet-photo" id="Cali1"></span>
+            <div class="description">
+              <p id="a">
+                Cali is a friendly and affectionate gal, and while she is a
+                mature lady of about 10 years, she plays like a kitten! As
+                expected with a Manx, she has a cute bobbed tail. Cali is up for
+                anywhere that she can have cuddles and lap time with humans. If
+                you are up for cuddles and lap time, sign up for a session with
+                Cali.
+              </p>
+            </div>
+
+            <span class="pet-photo" id="Cali"></span>
+          </div>
+          <div class="btn-container">
+            <button class="book-btn">Book</button>
+          </div>
+        </section>
+      </div>
+      <!-- end for the pet card -->
+    </section>
+    <!-- end for the main content -->
+
+    <!-- for button  -->
+    <div class="btn-container-2">
+      <div class="left-btn">
+        <a><i class="fas fa-chevron-left"></i></a>
+      </div>
+      <div class="right-btn">
+        <a><i class="fas fa-chevron-right"></i></a>
+      </div>
+    </div>
+    <div class="indicator">
+      <span class="btn active"></span>
+      <span class="btn"></span>
+      <span class="btn"></span>
+      <span class="btn"></span>
+    </div>
+    <!-- end for button -->
+
+    <!-- for contact us -->
+    <div class="contact-us">
+      <div class="footer-social-media-icon">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+
+      <div class="footer-container">
+        <div class="contact-container">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>SFU PET</li>
+            <li>1 778 782 1234</li>
+            <li>8888 University Drive</li>
+            <li>Burnaby, B.C.</li>
+            <li>Canada V5A 1S6</li>
+            <li>View on map</li>
+          </ul>
+        </div>
+        <div class="follow-us-container">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>@SFU_PET (Twitter)</li>
+            <li>@SFU_PET (Facebook)</li>
+            <li>@SFU_PET (Instagram)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <p>&copy;Copyright 2021 SFUPet</p>
+      </div>
+    </div>
+    <!-- end for contact us -->
+
+    <!-- for importing javaScript -->
+    <script src="src/js/js-for-therapist.js"></script>
+  </body>
+</html>
