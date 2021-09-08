@@ -496,7 +496,7 @@ body {
 }
 
 /* for mobile size */
-@media (max-width: 62.5rem) {
+@media (max-width: 68.5rem) {
   .nav-items {
     display: none;
   }
@@ -770,5 +770,14 @@ body {
     border-radius: 50%;
     background-color: #4d4d4d;
     transition: all 0.5s ease 0s;
+  }
+}
+@media (min-width: 1100px) and (min-height: 1000px) {
+  .main-content {
+    height: 75vh;
+  }
+
+  .main-content .pet-card-box .pet-card{
+    margin:5rem 5%;
   }
 }
